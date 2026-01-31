@@ -6,8 +6,8 @@ metadata:
 spec:
   project: platform
   source:
-    repoURL: .
-    targetRevision: HEAD
+    repoURL: https://github.com/mehtachirag186/case-study-1-infra.git
+    targetRevision: main
     path: infra/platform-bootstrap/platform/namespaces
   destination:
     server: https://kubernetes.default.svc
