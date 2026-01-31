@@ -19,3 +19,9 @@ variable "budget_amount" {
   type        = number
   default     = 700
 }
+
+variable "aks_node_count" {
+  description = "Number of AKS worker nodes"
+  type        = number
+  default     = 1
+}
