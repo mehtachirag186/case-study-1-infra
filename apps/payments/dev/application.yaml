@@ -17,4 +17,9 @@ spec:
       prune: true
       selfHeal: true
     syncOptions:
-      - ServerSideApply=True
+      - ServerSideApply=true
+  ignoreDifferences:
+    - group: rbac.authorization.k8s.io
+      kind: Role
+    - group: rbac.authorization.k8s.io
+      kind: RoleBinding
