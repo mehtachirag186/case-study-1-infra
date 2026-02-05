@@ -18,8 +18,13 @@ spec:
       selfHeal: true
     syncOptions:
       - ServerSideApply=true
+      - RespectIgnoreDifferences=true
   ignoreDifferences:
     - group: rbac.authorization.k8s.io
       kind: Role
+      managedFieldsManagers:
+        - kubectl
     - group: rbac.authorization.k8s.io
       kind: RoleBinding
+      managedFieldsManagers:
+        - kubectl
