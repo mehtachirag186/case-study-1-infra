@@ -4,7 +4,7 @@ metadata:
   name: platform
   namespace: argocd
 spec:
-  description: Platform-owned resources (cluster-wide control plane)
+  description: Platform-owned resources
   sourceRepos:
     - "*"
   destinations:
