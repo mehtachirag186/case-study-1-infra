@@ -6,7 +6,7 @@ metadata:
 spec:
   project: payments
   source:
-    repoURL: git@github.com:mehtachirag186/case-study-1-infra.git
+    repoURL: https://github.com/mehtachirag186/case-study-1-infra.git
     targetRevision: main
     path: apps/payments/dev
   destination:
