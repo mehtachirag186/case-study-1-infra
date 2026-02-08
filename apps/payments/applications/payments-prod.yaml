@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: payments-prod
+  namespace: argocd
+spec:
+  project: payments
+  source:
+    repoURL: https://github.com/mehtachirag186/case-study-1-infra.git
+    targetRevision: main
+    path: apps/payments/prod
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: team-payments-prod
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - ServerSideApply=true
