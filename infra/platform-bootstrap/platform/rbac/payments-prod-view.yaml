@@ -1,0 +1,16 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: payments-prod-view
+  namespace: team-payments-prod
+rules:
+- apiGroups: ["", "apps"]
+  resources:
+    - pods
+    - services
+    - deployments
+    - replicasets
+  verbs:
+    - get
+    - list
+    - watch

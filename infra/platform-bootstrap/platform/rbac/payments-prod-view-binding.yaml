@@ -1,11 +1,11 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: payments-prod-binding
+  name: payments-prod-view-binding
   namespace: team-payments-prod
 subjects:
 - kind: Group
-  name: payments-ops
+  name: payments-team
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role
